@@ -129,7 +129,7 @@ def main():
             print(f"Option {option_number}: {option.replace('X', '')}")  # Print the joined permutation without 'X' separators
             print("Permutation Order: ", permutation_options[option_number - 1])
             print(f"English word count: {word_count}")
-            print(f"English words found: {words_found}")
+            # print(f"English words found: {words_found}")               #Uncomment if you want a list of every word found. Mainly used for debugging
             print()
     print("-----------------------")
     print("Done! Press enter to exit")
