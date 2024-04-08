@@ -114,7 +114,14 @@ def print_top_options(top_options, column_permutations):
         english_words = find_english_words(joined_option)
         print("English words found:", english_words)
         print()
-
+# Main function, calls the above functions in order of their requirement.
+# 1. Split the ciphertext into period number of columns
+# 2. Calculate all possible permutations of the numbers 1 to period
+# 3. Re-order the ciphertext according to each of the calculated permutations
+# 4. Transpose the columns into rows (So that rather than being a vertical column, the column can be read left to right)
+# 5. Concatonate each of the sets rows to create a set of plaintexts
+# 6. Count the number of english words in each plaintext and record the number
+# 7. Order the list from highest number of English words to lowest and print the top 5
 def main():
     print("Enter Ciphertext: ")
     ciphertext = input()
