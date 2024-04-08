@@ -117,10 +117,8 @@ def main():
     max_period = int(input())
     print("Minimum word length (Number of characters): ")
     min_word_length = int(input())
-
     print("Procecssing... Please wait...")
     print("-----------------------")
-
     for period in range(1, max_period + 1):
         permutation_options = all_permutations(period)
         top_options = count_english_words_in_permutations(ciphertext, period, min_word_length)
@@ -133,9 +131,8 @@ def main():
             print(f"English word count: {word_count}")
             print(f"English words found: {words_found}")
             print()
-
     print("-----------------------")
-    print("Done!")
+    print("Done! Press enter to exit")
     input()
 
 if __name__ == "__main__":
