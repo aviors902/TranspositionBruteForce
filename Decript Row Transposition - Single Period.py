@@ -131,6 +131,8 @@ def main():
     print("-----------------------")
     print_top_options(top_options, column_permutations)
     print("-----------------------")
+    print("Press enter to exit.")
+    input()
 
 if __name__ == "__main__":
     main()
